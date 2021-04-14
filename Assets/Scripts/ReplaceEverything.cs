@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ReplaceEverything : MonoBehaviour
 {
-
     public Button optionBtn1;
     public Button optionBtn2;
     public Button optionBtn3;
@@ -18,10 +17,15 @@ public class ReplaceEverything : MonoBehaviour
 
     public Text title;
     public int count;
+
+    
+
+
+
     // Start is called before the first frame update
     void Start()
     {
-        count = 0;
+        
     }
 
     // Update is called once per frame
@@ -32,7 +36,9 @@ public class ReplaceEverything : MonoBehaviour
 
     public void OnClick()
     {
-        if (count == 0)
+        GameObject GameManager = GameObject.Find("GameManager");
+        CountTracking countTracking = GameManager.GetComponent<CountTracking>();
+        if (countTracking.count == 0)
         {
             title.GetComponent<Text>().text = "Some time passes as you do your applications, you eventually feel the need to brush up on what you learned. What do you do?";
 
@@ -40,10 +46,10 @@ public class ReplaceEverything : MonoBehaviour
             optionBtnTxt2.GetComponent<Text>().text = "Enhance one of your completed projects";
             optionBtnTxt3.GetComponent<Text>().text = "Take a much needed break.";
             optionBtnTxt4.GetComponent<Text>().text = "Wait patiently for someone to contact you on LinkedIn.";
-            count++;
+            countTracking.count++;
         }
 
-        else if (count == 1)
+        else if (countTracking.count == 1)
         {
 
             title.GetComponent<Text>().text = "Now comes the part where you prepare your resume, but you have so much information that will no doubt help you stand out. What do you do?";
@@ -51,7 +57,7 @@ public class ReplaceEverything : MonoBehaviour
             optionBtnTxt2.GetComponent<Text>().text = "Have all your best achievements on there! Go hard or go home";
             optionBtn3.gameObject.SetActive(false);
             optionBtn4.gameObject.SetActive(false);
-            count++;
+            countTracking.count++;
         }
     }
 }
