@@ -42,17 +42,21 @@ public class Click : MonoBehaviour
     public void OnClick()
     {
         GameObject GameManager = GameObject.Find("GameManager");
+        GameObject FeedBackManager = GameObject.Find("FeedBackTracking");
 
         CountTracking countTracking = GameManager.GetComponent<CountTracking>();
         BtnManager btnManager = GameManager.GetComponent<BtnManager>();
-        FeedBack feedBack = GameManager.GetComponent<FeedBack>();
+        FeedBack feedBack = FeedBackManager.GetComponent<FeedBack>();
 
         //Choose Classes
         if (SceneManager.GetActiveScene().name == "ChooseClasses")
         {
-            if (CheckAnswer() == false){
-                feedBack.feedBack += " You should be more carefful when picking classes";
-                Debug.Log("I was here " + feedBack.feedBack);
+            //CheckAnswer();
+            if (CheckAnswer() == false && countTracking.countA == 0)
+            {
+                feedBack.feedBack += " You should be more carefful when picking classes.";
+                Debug.Log(feedBack.feedBack);
+                countTracking.countA++;
             }
             if (countTracking.count <= 4)
             {
@@ -77,7 +81,12 @@ public class Click : MonoBehaviour
         //Preparation
         if (SceneManager.GetActiveScene().name == "Preparation")
         {
-            CheckAnswer();
+            if (CheckAnswer() == false && countTracking.countA == 0)
+            {
+                feedBack.feedBack += " You were not prepared for the Interview.";
+                Debug.Log(feedBack.feedBack);
+                countTracking.countA++;
+            }
             if (countTracking.count == 0)
             {
                 title.GetComponent<Text>().text = "Some time passes as you do your applications, you eventually feel the need to brush up on what you learned. What do you do?";
@@ -116,7 +125,13 @@ public class Click : MonoBehaviour
         //Interview Scene
         if (SceneManager.GetActiveScene().name == "Interview")
         {
-            CheckAnswer();
+            //CheckAnswer();
+            if (CheckAnswer() == false && countTracking.countA == 0)
+            {
+                feedBack.feedBack += " You left a bad impression on your interviewer.";
+                Debug.Log(feedBack.feedBack);
+                countTracking.countA++;
+            }
             //Slide #1
             if (countTracking.countS == 0)
             {
@@ -258,14 +273,24 @@ public class Click : MonoBehaviour
         //Choose Internship
         else if (SceneManager.GetActiveScene().name == "ChooseInternship")
         {
-            CheckAnswer();
+            if (CheckAnswer() == false && countTracking.countA == 0)
+            {
+                feedBack.feedBack += " Your Internship experience was not useful at all.";
+                Debug.Log(feedBack.feedBack);
+                countTracking.countA++;
+            }
             SceneManager.LoadScene("ChooseProject");
         }
 
         //Choose Project
         else if (SceneManager.GetActiveScene().name == "ChooseProject")
         {
-            CheckAnswer();
+            if (CheckAnswer() == false && countTracking.countA == 0)
+            {
+                feedBack.feedBack += " Your Final college project was a waste of a time.";
+                Debug.Log(feedBack.feedBack);
+                countTracking.countA++;
+            }
             SceneManager.LoadScene("Preparation");
         }
     }

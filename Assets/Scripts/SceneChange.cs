@@ -35,5 +35,9 @@ public class SceneChange : MonoBehaviour
         {
             SceneManager.LoadScene("Interview");
         }
+        else if (SceneManager.GetActiveScene().name == "GameEnd")
+        {
+            SceneManager.LoadScene("GameMenu");
+        }
     } 
 }

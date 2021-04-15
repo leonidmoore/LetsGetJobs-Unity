@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Correct
   - Wrong
+  - Music
   layers:
   - Default
   - TransparentFX

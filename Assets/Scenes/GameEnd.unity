@@ -834,7 +834,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go play "Spen" noob
+  m_Text: FeedBack
 --- !u!222 &1298062341
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1111,12 +1111,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1904712419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59980a2fe6c8d3e49b9fe2f476c2806d, type: 3}
+  m_Script: {fileID: 11500000, guid: c5f2055fa5d743d40b0fb0dbd6be6a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedBack: 
   title: {fileID: 716498934}
-  feedBackText: {fileID: 1298062340}
+  nextSceneBtn: {fileID: 731090816}
+  feedBackTextField: {fileID: 1298062340}
 --- !u!4 &1904712421
 Transform:
   m_ObjectHideFlags: 0
