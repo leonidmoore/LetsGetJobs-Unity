@@ -52,6 +52,7 @@ public class Click : MonoBehaviour
         {
             if (CheckAnswer() == false){
                 feedBack.feedBack += " You should be more carefful when picking classes";
+                Debug.Log("I was here " + feedBack.feedBack);
             }
             if (countTracking.count <= 4)
             {

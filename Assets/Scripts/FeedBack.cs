@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class FeedBack : MonoBehaviour
 {
-    public string feedBack = "hello";
+    public string feedBack;
     public Text title;
     public Text feedBackText;
 
