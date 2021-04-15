@@ -42,13 +42,14 @@ public class Click : MonoBehaviour
     public void OnClick()
     {
         GameObject GameManager = GameObject.Find("GameManager");
-        
+
         CountTracking countTracking = GameManager.GetComponent<CountTracking>();
         BtnManager btnManager = GameManager.GetComponent<BtnManager>();
 
-
+        //Choose Classes
         if (SceneManager.GetActiveScene().name == "ChooseClasses")
         {
+            CheckAnswer();
             if (countTracking.count <= 4)
             {
                 if (optionBtn.GetComponent<Image>().color == Color.white && countTracking.count != 4)
@@ -69,28 +70,37 @@ public class Click : MonoBehaviour
             }
         }
 
+        //Preparation
         if (SceneManager.GetActiveScene().name == "Preparation")
         {
+            CheckAnswer();
             if (countTracking.count == 0)
             {
                 title.GetComponent<Text>().text = "Some time passes as you do your applications, you eventually feel the need to brush up on what you learned. What do you do?";
 
-                optionBtnTxt1.GetComponent<Text>().text = "Take on one more project to kill time";
+                optionBtnTxt1.text = "Take on one more project to kill time";
                 optionBtnTxt2.GetComponent<Text>().text = "Enhance one of your completed projects";
                 optionBtnTxt3.GetComponent<Text>().text = "Take a much needed break.";
                 optionBtnTxt4.GetComponent<Text>().text = "Wait patiently for someone to contact you on LinkedIn.";
                 countTracking.count++;
+
+                optionBtn1.tag = "Wrong";
+                optionBtn2.tag = "Correct";
+                optionBtn3.tag = "Wrong";
+                optionBtn4.tag = "Wrong";
             }
 
             else if (countTracking.count == 1)
             {
-
                 title.GetComponent<Text>().text = "Now comes the part where you prepare your resume, but you have so much information that will no doubt help you stand out. What do you do?";
                 optionBtnTxt1.GetComponent<Text>().text = "Customize your resume to have some information related to the job";
                 optionBtnTxt2.GetComponent<Text>().text = "Have all your best achievements on there! Go hard or go home";
                 optionBtn3.gameObject.SetActive(false);
                 optionBtn4.gameObject.SetActive(false);
                 countTracking.count++;
+
+                optionBtn1.tag = "Correct";
+                optionBtn2.tag = "Wrong";
             }
 
             else if (countTracking.count == 2)
@@ -102,6 +112,7 @@ public class Click : MonoBehaviour
         //Interview Scene
         if (SceneManager.GetActiveScene().name == "Interview")
         {
+            CheckAnswer();
             //Slide #1
             if (countTracking.countS == 0)
             {
@@ -133,6 +144,12 @@ public class Click : MonoBehaviour
                     optionBtn6.gameObject.SetActive(false);
                     optionBtn7.gameObject.SetActive(false);
                     optionBtn8.gameObject.SetActive(false);
+
+                    optionBtn1.tag = "Correct";
+                    optionBtn2.tag = "Correct";
+                    optionBtn3.tag = "Wrong";
+                    optionBtn4.tag = "Wrong";
+                    optionBtn5.tag = "Correct";
                 }
 
             }
@@ -168,6 +185,13 @@ public class Click : MonoBehaviour
 
                     optionBtn7.gameObject.SetActive(false);
                     optionBtn8.gameObject.SetActive(false);
+                    
+                    optionBtn1.tag = "Correct";
+                    optionBtn2.tag = "Correct";
+                    optionBtn3.tag = "Wrong";
+                    optionBtn4.tag = "Wrong";
+                    optionBtn5.tag = "Correct";
+                    optionBtn6.tag = "Wrong";
                 }
 
             }
@@ -189,6 +213,11 @@ public class Click : MonoBehaviour
                 optionBtn6.gameObject.SetActive(false);
                 optionBtn7.gameObject.SetActive(false);
                 optionBtn8.gameObject.SetActive(false);
+
+                optionBtn1.tag = "Correct";
+                optionBtn2.tag = "Wrong";
+                optionBtn3.tag = "Correct";
+                optionBtn4.tag = "Wrong";
             }
 
 
@@ -208,6 +237,10 @@ public class Click : MonoBehaviour
                 optionBtn6.gameObject.SetActive(false);
                 optionBtn7.gameObject.SetActive(false);
                 optionBtn8.gameObject.SetActive(false);
+
+                optionBtn1.tag = "Wrong";
+                optionBtn2.tag = "Correct";
+                optionBtn3.tag = "Wrong";
             }
 
             //Slide #5
@@ -218,32 +251,31 @@ public class Click : MonoBehaviour
 
         }
 
-        /*
-        else if (SceneManager.GetActiveScene().name == "ChooseInternship" || SceneManager.GetActiveScene().name == "ChooseProject")
+        //Choose Internship
+        else if (SceneManager.GetActiveScene().name == "ChooseInternship")
         {
-            if (countTracking.count <= 1)
-            {
-                if (optionBtn.GetComponent<Image>().color == Color.white && countTracking.count != 1)
-                {
-                    optionBtn.GetComponent<Image>().color = Color.green;
-                    countTracking.count++;
-                }
-                else if (optionBtn.GetComponent<Image>().color == Color.green)
-                {
-                    optionBtn.GetComponent<Image>().color = Color.white;
-                    countTracking.count--;
-                }
-            }
-
-            if (countTracking.count == 1)
-            {
-                nextSceneBtn.gameObject.SetActive(true);
-            }
-            else
-            {
-                nextSceneBtn.gameObject.SetActive(false);
-            }
+            CheckAnswer();
+            SceneManager.LoadScene("ChooseProject");
         }
-        */
+
+        //Choose Project
+        else if (SceneManager.GetActiveScene().name == "ChooseProject")
+        {
+            CheckAnswer();
+            SceneManager.LoadScene("Preparation");
+        }
+    }
+    public void CheckAnswer()
+    {
+        if (optionBtn.tag == "Correct")
+        {
+            GlobalVariables.Instance.pts++;
+            Debug.Log(GlobalVariables.Instance.pts);
+        }
+        else
+        {
+            GlobalVariables.Instance.pts--;
+            Debug.Log(GlobalVariables.Instance.pts);
+        }
     }
 }
