@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Preparation.unity
     guid: 5b24452d6e944df4a9d40e6e772c029d
+  - enabled: 1
+    path: Assets/Scenes/Interview.unity
+    guid: dae0f524941782f4896c2983f87838ec
+  - enabled: 1
+    path: Assets/Scenes/GameEnd.unity
+    guid: 3959b93d07dabd64397e55d677163c86
   m_configObjects: {}

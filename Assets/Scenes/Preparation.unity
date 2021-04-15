@@ -590,7 +590,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 575467517}
-        m_TargetAssemblyTypeName: ReplaceEverything, Assembly-CSharp
+        m_TargetAssemblyTypeName: Click, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -648,19 +648,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 575467512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64868aef4a19f2144bbe794b2730dbf2, type: 3}
+  m_Script: {fileID: 11500000, guid: 23bf75ffaa9a19b408e3460b5e704ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionBtn: {fileID: 575467514}
   optionBtn1: {fileID: 655118565}
   optionBtn2: {fileID: 1893616847}
   optionBtn3: {fileID: 910215233}
   optionBtn4: {fileID: 575467514}
+  optionBtn5: {fileID: 0}
+  optionBtn6: {fileID: 0}
+  optionBtn7: {fileID: 0}
+  optionBtn8: {fileID: 0}
   optionBtnTxt1: {fileID: 508299065}
   optionBtnTxt2: {fileID: 88649172}
   optionBtnTxt3: {fileID: 1504377109}
   optionBtnTxt4: {fileID: 721460122}
+  optionBtnTxt5: {fileID: 0}
+  optionBtnTxt6: {fileID: 0}
+  optionBtnTxt7: {fileID: 0}
+  optionBtnTxt8: {fileID: 0}
   title: {fileID: 1461417548}
-  count: 0
+  nextSceneBtn: {fileID: 0}
 --- !u!1 &655118563
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +755,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 655118568}
-        m_TargetAssemblyTypeName: ReplaceEverything, Assembly-CSharp
+        m_TargetAssemblyTypeName: Click, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -804,19 +813,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 655118563}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64868aef4a19f2144bbe794b2730dbf2, type: 3}
+  m_Script: {fileID: 11500000, guid: 23bf75ffaa9a19b408e3460b5e704ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionBtn: {fileID: 655118565}
   optionBtn1: {fileID: 655118565}
   optionBtn2: {fileID: 1893616847}
   optionBtn3: {fileID: 910215233}
   optionBtn4: {fileID: 575467514}
+  optionBtn5: {fileID: 0}
+  optionBtn6: {fileID: 0}
+  optionBtn7: {fileID: 0}
+  optionBtn8: {fileID: 0}
   optionBtnTxt1: {fileID: 508299065}
   optionBtnTxt2: {fileID: 88649172}
   optionBtnTxt3: {fileID: 1504377109}
   optionBtnTxt4: {fileID: 721460122}
+  optionBtnTxt5: {fileID: 0}
+  optionBtnTxt6: {fileID: 0}
+  optionBtnTxt7: {fileID: 0}
+  optionBtnTxt8: {fileID: 0}
   title: {fileID: 1461417548}
-  count: 0
+  nextSceneBtn: {fileID: 0}
 --- !u!1 &721460120
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,7 +999,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 910215236}
-        m_TargetAssemblyTypeName: ReplaceEverything, Assembly-CSharp
+        m_TargetAssemblyTypeName: Click, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -1039,19 +1057,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 910215231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64868aef4a19f2144bbe794b2730dbf2, type: 3}
+  m_Script: {fileID: 11500000, guid: 23bf75ffaa9a19b408e3460b5e704ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionBtn: {fileID: 910215233}
   optionBtn1: {fileID: 655118565}
   optionBtn2: {fileID: 1893616847}
   optionBtn3: {fileID: 910215233}
   optionBtn4: {fileID: 575467514}
+  optionBtn5: {fileID: 0}
+  optionBtn6: {fileID: 0}
+  optionBtn7: {fileID: 0}
+  optionBtn8: {fileID: 0}
   optionBtnTxt1: {fileID: 508299065}
   optionBtnTxt2: {fileID: 88649172}
   optionBtnTxt3: {fileID: 1504377109}
   optionBtnTxt4: {fileID: 721460122}
+  optionBtnTxt5: {fileID: 0}
+  optionBtnTxt6: {fileID: 0}
+  optionBtnTxt7: {fileID: 0}
+  optionBtnTxt8: {fileID: 0}
   title: {fileID: 1461417548}
-  count: 0
+  nextSceneBtn: {fileID: 0}
 --- !u!1 &949297519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,6 +1329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: 0
+  countS: 0
 --- !u!1 &1504377107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,7 +1494,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1893616850}
-        m_TargetAssemblyTypeName: ReplaceEverything, Assembly-CSharp
+        m_TargetAssemblyTypeName: Click, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -1524,16 +1552,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1893616845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64868aef4a19f2144bbe794b2730dbf2, type: 3}
+  m_Script: {fileID: 11500000, guid: 23bf75ffaa9a19b408e3460b5e704ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionBtn: {fileID: 1893616847}
   optionBtn1: {fileID: 655118565}
   optionBtn2: {fileID: 1893616847}
   optionBtn3: {fileID: 910215233}
   optionBtn4: {fileID: 575467514}
+  optionBtn5: {fileID: 0}
+  optionBtn6: {fileID: 0}
+  optionBtn7: {fileID: 0}
+  optionBtn8: {fileID: 0}
   optionBtnTxt1: {fileID: 508299065}
   optionBtnTxt2: {fileID: 88649172}
   optionBtnTxt3: {fileID: 1504377109}
   optionBtnTxt4: {fileID: 721460122}
+  optionBtnTxt5: {fileID: 0}
+  optionBtnTxt6: {fileID: 0}
+  optionBtnTxt7: {fileID: 0}
+  optionBtnTxt8: {fileID: 0}
   title: {fileID: 1461417548}
-  count: 0
+  nextSceneBtn: {fileID: 0}
