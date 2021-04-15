@@ -5,18 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void NextScene()
     {
         if (SceneManager.GetActiveScene().name == "GameMenu")
@@ -42,6 +30,10 @@ public class SceneChange : MonoBehaviour
         else if (SceneManager.GetActiveScene().name == "ChooseProject")
         {
             SceneManager.LoadScene("Preparation");
+        }
+        else if (SceneManager.GetActiveScene().name == "Preparation")
+        {
+            SceneManager.LoadScene("Interview");
         }
     } 
 }

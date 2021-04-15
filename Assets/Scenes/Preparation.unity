@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 88649173}
   - component: {fileID: 88649172}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 508299066}
   - component: {fileID: 508299065}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -538,7 +538,7 @@ RectTransform:
   m_Children:
   - {fileID: 721460121}
   m_Father: {fileID: 949297523}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -651,14 +651,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64868aef4a19f2144bbe794b2730dbf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
-  optionBtnTxt1: {fileID: 0}
-  optionBtnTxt2: {fileID: 0}
-  optionBtnTxt3: {fileID: 0}
-  optionBtnTxt4: {fileID: 0}
+  optionBtn1: {fileID: 655118565}
+  optionBtn2: {fileID: 1893616847}
+  optionBtn3: {fileID: 910215233}
+  optionBtn4: {fileID: 575467514}
+  optionBtnTxt1: {fileID: 508299065}
+  optionBtnTxt2: {fileID: 88649172}
+  optionBtnTxt3: {fileID: 1504377109}
+  optionBtnTxt4: {fileID: 721460122}
   title: {fileID: 1461417548}
   count: 0
 --- !u!1 &655118563
@@ -694,7 +694,7 @@ RectTransform:
   m_Children:
   - {fileID: 508299064}
   m_Father: {fileID: 949297523}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -829,7 +829,7 @@ GameObject:
   - component: {fileID: 721460123}
   - component: {fileID: 721460122}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -929,7 +929,7 @@ RectTransform:
   m_Children:
   - {fileID: 1504377108}
   m_Father: {fileID: 949297523}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1042,15 +1042,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64868aef4a19f2144bbe794b2730dbf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
-  optionBtnTxt1: {fileID: 0}
-  optionBtnTxt2: {fileID: 0}
-  optionBtnTxt3: {fileID: 0}
-  optionBtnTxt4: {fileID: 0}
-  title: {fileID: 0}
+  optionBtn1: {fileID: 655118565}
+  optionBtn2: {fileID: 1893616847}
+  optionBtn3: {fileID: 910215233}
+  optionBtn4: {fileID: 575467514}
+  optionBtnTxt1: {fileID: 508299065}
+  optionBtnTxt2: {fileID: 88649172}
+  optionBtnTxt3: {fileID: 1504377109}
+  optionBtnTxt4: {fileID: 721460122}
+  title: {fileID: 1461417548}
   count: 0
 --- !u!1 &949297519
 GameObject:
@@ -1144,11 +1144,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 20315274}
-  - {fileID: 1461417547}
   - {fileID: 655118564}
   - {fileID: 1893616846}
   - {fileID: 910215232}
   - {fileID: 575467513}
+  - {fileID: 1461417547}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1188,7 +1188,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 949297523}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1267,6 +1267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1484412649}
+  - component: {fileID: 1484412650}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1288,6 +1289,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1484412650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484412648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84627df67ef768845a5985a4002c3d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
 --- !u!1 &1504377107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,7 +1314,7 @@ GameObject:
   - component: {fileID: 1504377110}
   - component: {fileID: 1504377109}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1400,7 +1414,7 @@ RectTransform:
   m_Children:
   - {fileID: 88649171}
   m_Father: {fileID: 949297523}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1513,13 +1527,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64868aef4a19f2144bbe794b2730dbf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
-  optionBtnTxt1: {fileID: 0}
-  optionBtnTxt2: {fileID: 0}
-  optionBtnTxt3: {fileID: 0}
-  optionBtnTxt4: {fileID: 0}
+  optionBtn1: {fileID: 655118565}
+  optionBtn2: {fileID: 1893616847}
+  optionBtn3: {fileID: 910215233}
+  optionBtn4: {fileID: 575467514}
+  optionBtnTxt1: {fileID: 508299065}
+  optionBtnTxt2: {fileID: 88649172}
+  optionBtnTxt3: {fileID: 1504377109}
+  optionBtnTxt4: {fileID: 721460122}
   title: {fileID: 1461417548}
   count: 0

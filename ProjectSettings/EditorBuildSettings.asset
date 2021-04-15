@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChooseMajor.unity
     guid: e5a397e1cd40bf7488884c249b0922c1
+  - enabled: 1
+    path: Assets/Scenes/ChooseClasses.unity
+    guid: 9be3a276e2f04ce4c912c147cc6fb1c0
+  - enabled: 1
+    path: Assets/Scenes/ChooseInternship.unity
+    guid: b0d0b2a8484ea8a42a9d9e5af32b008e
+  - enabled: 1
+    path: Assets/Scenes/ChooseProject.unity
+    guid: c58ce42e7cefe08459a9c79dcfe345eb
+  - enabled: 1
+    path: Assets/Scenes/Preparation.unity
+    guid: 5b24452d6e944df4a9d40e6e772c029d
   m_configObjects: {}
