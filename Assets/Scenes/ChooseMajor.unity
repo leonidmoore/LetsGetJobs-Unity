@@ -684,10 +684,7 @@ MonoBehaviour:
   m_Text: 'Full-Stack Web Developer
 
 
-    $150,000
-
-
-    34%'
+    $150,000'
 --- !u!222 &944218467
 CanvasRenderer:
   m_ObjectHideFlags: 0

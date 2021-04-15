@@ -26,15 +26,13 @@ public class BtnManager : MonoBehaviour
         btnList.Add(optionBtn8);
     }
     
-    public List<Button> Reset()
+    public void  Reset()
     {
         foreach (Button btn in btnList)
         {
             btn.GetComponent<Image>().color = Color.white;
             btn.gameObject.SetActive(true);
         }
-
-        return btnList;
     }
     
 }

@@ -45,11 +45,14 @@ public class Click : MonoBehaviour
 
         CountTracking countTracking = GameManager.GetComponent<CountTracking>();
         BtnManager btnManager = GameManager.GetComponent<BtnManager>();
+        FeedBack feedBack = GameManager.GetComponent<FeedBack>();
 
         //Choose Classes
         if (SceneManager.GetActiveScene().name == "ChooseClasses")
         {
-            CheckAnswer();
+            if (CheckAnswer() == false){
+                feedBack.feedBack += " You should be more carefful when picking classes";
+            }
             if (countTracking.count <= 4)
             {
                 if (optionBtn.GetComponent<Image>().color == Color.white && countTracking.count != 4)
@@ -265,17 +268,19 @@ public class Click : MonoBehaviour
             SceneManager.LoadScene("Preparation");
         }
     }
-    public void CheckAnswer()
+    public bool CheckAnswer()
     {
         if (optionBtn.tag == "Correct")
         {
             GlobalVariables.Instance.pts++;
             Debug.Log(GlobalVariables.Instance.pts);
+            return true;
         }
         else
         {
             GlobalVariables.Instance.pts--;
             Debug.Log(GlobalVariables.Instance.pts);
+            return false;
         }
     }
 }

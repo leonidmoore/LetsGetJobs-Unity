@@ -1,8 +1,0 @@
-Modern JavaScript
-Applied Software Development
-Database Systems
-Introduction to Multimedia Programming
-Electronic Commerce
-Cryptography and Cryptanalysis
-Assembly Language Programming for Microcomputers
-Workstation Programming
