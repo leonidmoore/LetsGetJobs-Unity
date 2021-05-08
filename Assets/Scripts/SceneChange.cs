@@ -1,15 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
+    public Button optionBtn;
     public void NextScene()
     {
         if (SceneManager.GetActiveScene().name == "GameMenu")
         {
-            SceneManager.LoadScene("Intro");
+            if (optionBtn.name == "Settings")
+            {
+                SceneManager.LoadScene("Settings");
+            }
+            else if (optionBtn.name == "StartGameBtn")
+            {
+                SceneManager.LoadScene("Intro");
+            }
         }
         else if (SceneManager.GetActiveScene().name == "Intro")
         {
@@ -36,6 +45,10 @@ public class SceneChange : MonoBehaviour
             SceneManager.LoadScene("Interview");
         }
         else if (SceneManager.GetActiveScene().name == "GameEnd")
+        {
+            SceneManager.LoadScene("GameMenu");
+        }
+        else if (SceneManager.GetActiveScene().name == "Settings")
         {
             SceneManager.LoadScene("GameMenu");
         }

@@ -292,6 +292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383737224}
   - component: {fileID: 383737223}
+  - component: {fileID: 383737225}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -328,6 +329,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &383737225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383737222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb744f61e879424282e4f3053028dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionBtn1: {fileID: 0}
+  optionBtn2: {fileID: 0}
+  optionBtn3: {fileID: 0}
+  optionBtn4: {fileID: 0}
+  optionBtn5: {fileID: 0}
+  optionBtn6: {fileID: 0}
+  optionBtn7: {fileID: 0}
+  optionBtn8: {fileID: 0}
+  optionBtnTxt1: {fileID: 1423723221}
+  optionBtnTxt2: {fileID: 568487682}
+  optionBtnTxt3: {fileID: 902819240}
+  optionBtnTxt4: {fileID: 273432536}
+  optionBtnTxt5: {fileID: 2046962127}
+  optionBtnTxt6: {fileID: 0}
+  optionBtnTxt7: {fileID: 0}
+  optionBtnTxt8: {fileID: 0}
+  title: {fileID: 0}
 --- !u!1 &568487680
 GameObject:
   m_ObjectHideFlags: 0

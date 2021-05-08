@@ -7,8 +7,5 @@ using UnityEngine.SceneManagement;
 public class FeedBack : MonoBehaviour
 {
     public string feedBack;
-    void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+    public List<string> feedBackList;
 }

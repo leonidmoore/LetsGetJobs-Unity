@@ -193,6 +193,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 993585872}
   optionBtnTxt8: {fileID: 857541181}
   title: {fileID: 491576057}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &18300265
 MonoBehaviour:
@@ -578,6 +579,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 993585872}
   optionBtnTxt8: {fileID: 857541181}
   title: {fileID: 491576057}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &71753483
 MonoBehaviour:
@@ -1332,6 +1334,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 993585872}
   optionBtnTxt8: {fileID: 857541181}
   title: {fileID: 491576057}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1077806640
 MonoBehaviour:
@@ -1497,6 +1500,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 993585872}
   optionBtnTxt8: {fileID: 857541181}
   title: {fileID: 491576057}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1240943895
 MonoBehaviour:
@@ -1820,6 +1824,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 993585872}
   optionBtnTxt8: {fileID: 857541181}
   title: {fileID: 491576057}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1343627295
 MonoBehaviour:
@@ -1926,6 +1931,7 @@ GameObject:
   - component: {fileID: 1386887334}
   - component: {fileID: 1386887333}
   - component: {fileID: 1386887335}
+  - component: {fileID: 1386887336}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1983,6 +1989,35 @@ MonoBehaviour:
   optionBtn6: {fileID: 1589926096}
   optionBtn7: {fileID: 1723473099}
   optionBtn8: {fileID: 1343627295}
+--- !u!114 &1386887336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386887332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb744f61e879424282e4f3053028dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionBtn1: {fileID: 1240943895}
+  optionBtn2: {fileID: 18300265}
+  optionBtn3: {fileID: 71753483}
+  optionBtn4: {fileID: 1077806640}
+  optionBtn5: {fileID: 1392641742}
+  optionBtn6: {fileID: 1589926096}
+  optionBtn7: {fileID: 1723473099}
+  optionBtn8: {fileID: 1343627295}
+  optionBtnTxt1: {fileID: 446129173}
+  optionBtnTxt2: {fileID: 1256006663}
+  optionBtnTxt3: {fileID: 2082405604}
+  optionBtnTxt4: {fileID: 1299545825}
+  optionBtnTxt5: {fileID: 895616654}
+  optionBtnTxt6: {fileID: 22932922}
+  optionBtnTxt7: {fileID: 993585872}
+  optionBtnTxt8: {fileID: 857541181}
+  title: {fileID: 491576057}
 --- !u!1 &1392641739
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,6 +2088,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 993585872}
   optionBtnTxt8: {fileID: 857541181}
   title: {fileID: 491576057}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1392641742
 MonoBehaviour:
@@ -2218,6 +2254,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 993585872}
   optionBtnTxt8: {fileID: 857541181}
   title: {fileID: 491576057}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1589926096
 MonoBehaviour:
@@ -2383,6 +2420,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 993585872}
   optionBtnTxt8: {fileID: 857541181}
   title: {fileID: 491576057}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1723473099
 MonoBehaviour:

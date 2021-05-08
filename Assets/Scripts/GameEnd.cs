@@ -19,8 +19,5 @@ public class GameEnd : MonoBehaviour
         {
             title.text = "You did not get the job :(";
         }
-        GameObject GameManager = GameObject.Find("FeedBackTracking");
-        FeedBack feedBack = GameManager.GetComponent<FeedBack>();
-        feedBackTextField.text = feedBack.feedBack;
     }
 }

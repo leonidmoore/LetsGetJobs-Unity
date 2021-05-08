@@ -270,23 +270,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionBtn: {fileID: 4061837}
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
-  optionBtn5: {fileID: 0}
-  optionBtn6: {fileID: 0}
-  optionBtn7: {fileID: 0}
-  optionBtn8: {fileID: 0}
-  optionBtnTxt1: {fileID: 0}
-  optionBtnTxt2: {fileID: 0}
-  optionBtnTxt3: {fileID: 0}
-  optionBtnTxt4: {fileID: 0}
-  optionBtnTxt5: {fileID: 0}
-  optionBtnTxt6: {fileID: 0}
-  optionBtnTxt7: {fileID: 0}
-  optionBtnTxt8: {fileID: 0}
-  title: {fileID: 0}
+  optionBtn1: {fileID: 1986243383}
+  optionBtn2: {fileID: 4061837}
+  optionBtn3: {fileID: 459423794}
+  optionBtn4: {fileID: 1351466736}
+  optionBtn5: {fileID: 1876831712}
+  optionBtn6: {fileID: 1585522908}
+  optionBtn7: {fileID: 2015404593}
+  optionBtn8: {fileID: 1162032825}
+  optionBtnTxt1: {fileID: 717435755}
+  optionBtnTxt2: {fileID: 16624460}
+  optionBtnTxt3: {fileID: 1980178097}
+  optionBtnTxt4: {fileID: 109708962}
+  optionBtnTxt5: {fileID: 1970543612}
+  optionBtnTxt6: {fileID: 1363268897}
+  optionBtnTxt7: {fileID: 1570402843}
+  optionBtnTxt8: {fileID: 42368132}
+  title: {fileID: 1228150328}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!1 &16624458
 GameObject:
@@ -813,23 +814,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionBtn: {fileID: 459423794}
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
-  optionBtn5: {fileID: 0}
-  optionBtn6: {fileID: 0}
-  optionBtn7: {fileID: 0}
-  optionBtn8: {fileID: 0}
-  optionBtnTxt1: {fileID: 0}
-  optionBtnTxt2: {fileID: 0}
-  optionBtnTxt3: {fileID: 0}
-  optionBtnTxt4: {fileID: 0}
-  optionBtnTxt5: {fileID: 0}
-  optionBtnTxt6: {fileID: 0}
-  optionBtnTxt7: {fileID: 0}
-  optionBtnTxt8: {fileID: 0}
-  title: {fileID: 0}
+  optionBtn1: {fileID: 1986243383}
+  optionBtn2: {fileID: 4061837}
+  optionBtn3: {fileID: 459423794}
+  optionBtn4: {fileID: 1351466736}
+  optionBtn5: {fileID: 1876831712}
+  optionBtn6: {fileID: 1585522908}
+  optionBtn7: {fileID: 2015404593}
+  optionBtn8: {fileID: 1162032825}
+  optionBtnTxt1: {fileID: 717435755}
+  optionBtnTxt2: {fileID: 16624460}
+  optionBtnTxt3: {fileID: 1980178097}
+  optionBtnTxt4: {fileID: 109708962}
+  optionBtnTxt5: {fileID: 1970543612}
+  optionBtnTxt6: {fileID: 1363268897}
+  optionBtnTxt7: {fileID: 1570402843}
+  optionBtnTxt8: {fileID: 42368132}
+  title: {fileID: 1228150328}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!1 &717435753
 GameObject:
@@ -920,6 +922,8 @@ GameObject:
   m_Component:
   - component: {fileID: 751779092}
   - component: {fileID: 751779091}
+  - component: {fileID: 751779093}
+  - component: {fileID: 751779094}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -956,6 +960,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &751779093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751779090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c4e5af385798e4c97ab0ee698a0daf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnList: []
+  optionBtn1: {fileID: 1986243383}
+  optionBtn2: {fileID: 4061837}
+  optionBtn3: {fileID: 459423794}
+  optionBtn4: {fileID: 1351466736}
+  optionBtn5: {fileID: 1876831712}
+  optionBtn6: {fileID: 1585522908}
+  optionBtn7: {fileID: 2015404593}
+  optionBtn8: {fileID: 1162032825}
+--- !u!114 &751779094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751779090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb744f61e879424282e4f3053028dd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionBtn1: {fileID: 0}
+  optionBtn2: {fileID: 0}
+  optionBtn3: {fileID: 0}
+  optionBtn4: {fileID: 0}
+  optionBtn5: {fileID: 0}
+  optionBtn6: {fileID: 0}
+  optionBtn7: {fileID: 0}
+  optionBtn8: {fileID: 0}
+  optionBtnTxt1: {fileID: 717435755}
+  optionBtnTxt2: {fileID: 16624460}
+  optionBtnTxt3: {fileID: 1980178097}
+  optionBtnTxt4: {fileID: 109708962}
+  optionBtnTxt5: {fileID: 1970543612}
+  optionBtnTxt6: {fileID: 1363268897}
+  optionBtnTxt7: {fileID: 1570402843}
+  optionBtnTxt8: {fileID: 42368132}
+  title: {fileID: 1228150328}
 --- !u!1 &1162032823
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +1025,7 @@ GameObject:
   - component: {fileID: 1162032828}
   m_Layer: 5
   m_Name: Class8
-  m_TagString: Untagged
+  m_TagString: Wrong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1103,23 +1157,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionBtn: {fileID: 1162032825}
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
-  optionBtn5: {fileID: 0}
-  optionBtn6: {fileID: 0}
-  optionBtn7: {fileID: 0}
-  optionBtn8: {fileID: 0}
-  optionBtnTxt1: {fileID: 0}
-  optionBtnTxt2: {fileID: 0}
-  optionBtnTxt3: {fileID: 0}
-  optionBtnTxt4: {fileID: 0}
-  optionBtnTxt5: {fileID: 0}
-  optionBtnTxt6: {fileID: 0}
-  optionBtnTxt7: {fileID: 0}
-  optionBtnTxt8: {fileID: 0}
-  title: {fileID: 0}
+  optionBtn1: {fileID: 1986243383}
+  optionBtn2: {fileID: 4061837}
+  optionBtn3: {fileID: 459423794}
+  optionBtn4: {fileID: 1351466736}
+  optionBtn5: {fileID: 1876831712}
+  optionBtn6: {fileID: 1585522908}
+  optionBtn7: {fileID: 2015404593}
+  optionBtn8: {fileID: 1162032825}
+  optionBtnTxt1: {fileID: 717435755}
+  optionBtnTxt2: {fileID: 16624460}
+  optionBtnTxt3: {fileID: 1980178097}
+  optionBtnTxt4: {fileID: 109708962}
+  optionBtnTxt5: {fileID: 1970543612}
+  optionBtnTxt6: {fileID: 1363268897}
+  optionBtnTxt7: {fileID: 1570402843}
+  optionBtnTxt8: {fileID: 42368132}
+  title: {fileID: 1228150328}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!1 &1228150326
 GameObject:
@@ -1132,6 +1187,7 @@ GameObject:
   - component: {fileID: 1228150327}
   - component: {fileID: 1228150329}
   - component: {fileID: 1228150328}
+  - component: {fileID: 1228150330}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -1202,6 +1258,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228150326}
   m_CullTransparentMesh: 1
+--- !u!114 &1228150330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228150326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878517980a9566c4e85e9c1a5cdacd58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textToUse: {fileID: 1228150328}
+  useThisText: 1
+  fadeIn: 1
+  fadeOnStart: 1
+  timeMultiplier: 1
 --- !u!1 &1351466734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,23 +1422,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionBtn: {fileID: 1351466736}
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
-  optionBtn5: {fileID: 0}
-  optionBtn6: {fileID: 0}
-  optionBtn7: {fileID: 0}
-  optionBtn8: {fileID: 0}
-  optionBtnTxt1: {fileID: 0}
-  optionBtnTxt2: {fileID: 0}
-  optionBtnTxt3: {fileID: 0}
-  optionBtnTxt4: {fileID: 0}
-  optionBtnTxt5: {fileID: 0}
-  optionBtnTxt6: {fileID: 0}
-  optionBtnTxt7: {fileID: 0}
-  optionBtnTxt8: {fileID: 0}
-  title: {fileID: 0}
+  optionBtn1: {fileID: 1986243383}
+  optionBtn2: {fileID: 4061837}
+  optionBtn3: {fileID: 459423794}
+  optionBtn4: {fileID: 1351466736}
+  optionBtn5: {fileID: 1876831712}
+  optionBtn6: {fileID: 1585522908}
+  optionBtn7: {fileID: 2015404593}
+  optionBtn8: {fileID: 1162032825}
+  optionBtnTxt1: {fileID: 717435755}
+  optionBtnTxt2: {fileID: 16624460}
+  optionBtnTxt3: {fileID: 1980178097}
+  optionBtnTxt4: {fileID: 109708962}
+  optionBtnTxt5: {fileID: 1970543612}
+  optionBtnTxt6: {fileID: 1363268897}
+  optionBtnTxt7: {fileID: 1570402843}
+  optionBtnTxt8: {fileID: 42368132}
+  title: {fileID: 1228150328}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!1 &1363268895
 GameObject:
@@ -1755,23 +1829,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionBtn: {fileID: 1585522908}
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
-  optionBtn5: {fileID: 0}
-  optionBtn6: {fileID: 0}
-  optionBtn7: {fileID: 0}
-  optionBtn8: {fileID: 0}
-  optionBtnTxt1: {fileID: 0}
-  optionBtnTxt2: {fileID: 0}
-  optionBtnTxt3: {fileID: 0}
-  optionBtnTxt4: {fileID: 0}
-  optionBtnTxt5: {fileID: 0}
-  optionBtnTxt6: {fileID: 0}
-  optionBtnTxt7: {fileID: 0}
-  optionBtnTxt8: {fileID: 0}
-  title: {fileID: 0}
+  optionBtn1: {fileID: 1986243383}
+  optionBtn2: {fileID: 4061837}
+  optionBtn3: {fileID: 459423794}
+  optionBtn4: {fileID: 1351466736}
+  optionBtn5: {fileID: 1876831712}
+  optionBtn6: {fileID: 1585522908}
+  optionBtn7: {fileID: 2015404593}
+  optionBtn8: {fileID: 1162032825}
+  optionBtnTxt1: {fileID: 717435755}
+  optionBtnTxt2: {fileID: 16624460}
+  optionBtnTxt3: {fileID: 1980178097}
+  optionBtnTxt4: {fileID: 109708962}
+  optionBtnTxt5: {fileID: 1970543612}
+  optionBtnTxt6: {fileID: 1363268897}
+  optionBtnTxt7: {fileID: 1570402843}
+  optionBtnTxt8: {fileID: 42368132}
+  title: {fileID: 1228150328}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!1 &1876831710
 GameObject:
@@ -1920,23 +1995,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionBtn: {fileID: 1876831712}
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
-  optionBtn5: {fileID: 0}
-  optionBtn6: {fileID: 0}
-  optionBtn7: {fileID: 0}
-  optionBtn8: {fileID: 0}
-  optionBtnTxt1: {fileID: 0}
-  optionBtnTxt2: {fileID: 0}
-  optionBtnTxt3: {fileID: 0}
-  optionBtnTxt4: {fileID: 0}
-  optionBtnTxt5: {fileID: 0}
-  optionBtnTxt6: {fileID: 0}
-  optionBtnTxt7: {fileID: 0}
-  optionBtnTxt8: {fileID: 0}
-  title: {fileID: 0}
+  optionBtn1: {fileID: 1986243383}
+  optionBtn2: {fileID: 4061837}
+  optionBtn3: {fileID: 459423794}
+  optionBtn4: {fileID: 1351466736}
+  optionBtn5: {fileID: 1876831712}
+  optionBtn6: {fileID: 1585522908}
+  optionBtn7: {fileID: 2015404593}
+  optionBtn8: {fileID: 1162032825}
+  optionBtnTxt1: {fileID: 717435755}
+  optionBtnTxt2: {fileID: 16624460}
+  optionBtnTxt3: {fileID: 1980178097}
+  optionBtnTxt4: {fileID: 109708962}
+  optionBtnTxt5: {fileID: 1970543612}
+  optionBtnTxt6: {fileID: 1363268897}
+  optionBtnTxt7: {fileID: 1570402843}
+  optionBtnTxt8: {fileID: 42368132}
+  title: {fileID: 1228150328}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!1 &1965551113
 GameObject:
@@ -2352,23 +2428,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionBtn: {fileID: 1986243383}
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
-  optionBtn5: {fileID: 0}
-  optionBtn6: {fileID: 0}
-  optionBtn7: {fileID: 0}
-  optionBtn8: {fileID: 0}
-  optionBtnTxt1: {fileID: 0}
-  optionBtnTxt2: {fileID: 0}
-  optionBtnTxt3: {fileID: 0}
-  optionBtnTxt4: {fileID: 0}
-  optionBtnTxt5: {fileID: 0}
-  optionBtnTxt6: {fileID: 0}
-  optionBtnTxt7: {fileID: 0}
-  optionBtnTxt8: {fileID: 0}
-  title: {fileID: 0}
+  optionBtn1: {fileID: 1986243383}
+  optionBtn2: {fileID: 4061837}
+  optionBtn3: {fileID: 459423794}
+  optionBtn4: {fileID: 1351466736}
+  optionBtn5: {fileID: 1876831712}
+  optionBtn6: {fileID: 1585522908}
+  optionBtn7: {fileID: 2015404593}
+  optionBtn8: {fileID: 1162032825}
+  optionBtnTxt1: {fileID: 717435755}
+  optionBtnTxt2: {fileID: 16624460}
+  optionBtnTxt3: {fileID: 1980178097}
+  optionBtnTxt4: {fileID: 109708962}
+  optionBtnTxt5: {fileID: 1970543612}
+  optionBtnTxt6: {fileID: 1363268897}
+  optionBtnTxt7: {fileID: 1570402843}
+  optionBtnTxt8: {fileID: 42368132}
+  title: {fileID: 1228150328}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!1 &2015404591
 GameObject:
@@ -2517,21 +2594,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionBtn: {fileID: 2015404593}
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
-  optionBtn5: {fileID: 0}
-  optionBtn6: {fileID: 0}
-  optionBtn7: {fileID: 0}
-  optionBtn8: {fileID: 0}
-  optionBtnTxt1: {fileID: 0}
-  optionBtnTxt2: {fileID: 0}
-  optionBtnTxt3: {fileID: 0}
-  optionBtnTxt4: {fileID: 0}
-  optionBtnTxt5: {fileID: 0}
-  optionBtnTxt6: {fileID: 0}
-  optionBtnTxt7: {fileID: 0}
-  optionBtnTxt8: {fileID: 0}
-  title: {fileID: 0}
+  optionBtn1: {fileID: 1986243383}
+  optionBtn2: {fileID: 4061837}
+  optionBtn3: {fileID: 459423794}
+  optionBtn4: {fileID: 1351466736}
+  optionBtn5: {fileID: 1876831712}
+  optionBtn6: {fileID: 1585522908}
+  optionBtn7: {fileID: 2015404593}
+  optionBtn8: {fileID: 1162032825}
+  optionBtnTxt1: {fileID: 717435755}
+  optionBtnTxt2: {fileID: 16624460}
+  optionBtnTxt3: {fileID: 1980178097}
+  optionBtnTxt4: {fileID: 109708962}
+  optionBtnTxt5: {fileID: 1970543612}
+  optionBtnTxt6: {fileID: 1363268897}
+  optionBtnTxt7: {fileID: 1570402843}
+  optionBtnTxt8: {fileID: 42368132}
+  title: {fileID: 1228150328}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
