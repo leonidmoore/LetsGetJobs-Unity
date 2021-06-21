@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 376824144}
   - component: {fileID: 376824146}
   - component: {fileID: 376824145}
+  - component: {fileID: 376824147}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -273,7 +274,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "You\u2019re one step away from graduation, but it's time to do your Final
-    Project. What interesting project would you like to do? Choose 1"
+    Project. What interesting project would you like to do? (pick 1)"
 --- !u!222 &376824146
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -282,6 +283,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376824143}
   m_CullTransparentMesh: 1
+--- !u!114 &376824147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376824143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878517980a9566c4e85e9c1a5cdacd58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &383737222
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,6 +780,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1140080319
 MonoBehaviour:
@@ -998,6 +1012,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1231516643
 MonoBehaviour:
@@ -1325,6 +1340,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1571657491
 MonoBehaviour:
@@ -1490,6 +1506,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1818826486
 MonoBehaviour:
@@ -1655,6 +1672,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1921189888
 MonoBehaviour:

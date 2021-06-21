@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class SceneChange : MonoBehaviour
 {
     public Button optionBtn;
+    public FeedBack feedBack;
+
     public void NextScene()
     {
         if (SceneManager.GetActiveScene().name == "GameMenu")
@@ -46,6 +48,12 @@ public class SceneChange : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "GameEnd")
         {
+            GameObject FeedBackManager = GameObject.Find("FeedBackTracking");
+            FeedBack feedBack = FeedBackManager.GetComponent<FeedBack>();
+            FeedBack feedBackList = FeedBackManager.GetComponent<FeedBack>();
+            feedBack.feedBackList.Clear();
+            GlobalVariables.Instance.pts = 0;
+            //btnManager.Reset();
             SceneManager.LoadScene("GameMenu");
         }
         else if (SceneManager.GetActiveScene().name == "Settings")

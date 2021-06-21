@@ -848,6 +848,7 @@ GameObject:
   - component: {fileID: 491576056}
   - component: {fileID: 491576058}
   - component: {fileID: 491576057}
+  - component: {fileID: 491576059}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -908,7 +909,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Can you tell us briefly about yourself? How would you best go about doing
-    this. Choose a combination of 3 answers
+    this. (pick 3)
 --- !u!222 &491576058
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -917,6 +918,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491576055}
   m_CullTransparentMesh: 1
+--- !u!114 &491576059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491576055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878517980a9566c4e85e9c1a5cdacd58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &857541179
 GameObject:
   m_ObjectHideFlags: 0

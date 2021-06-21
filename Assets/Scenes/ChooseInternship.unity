@@ -193,6 +193,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &93320389
 MonoBehaviour:
@@ -358,6 +359,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &291505041
 MonoBehaviour:
@@ -692,6 +694,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!1 &830515130
 GameObject:
@@ -763,6 +766,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &830515133
 MonoBehaviour:
@@ -948,6 +952,7 @@ GameObject:
   - component: {fileID: 957647819}
   - component: {fileID: 957647821}
   - component: {fileID: 957647820}
+  - component: {fileID: 957647822}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -1009,7 +1014,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Before you graduate, its recommended to try your hand in an internship
     where you learn more about your desired career path. What do you want to do?
-    Choose 1
+    (pick 1)
 --- !u!222 &957647821
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1018,6 +1023,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957647818}
   m_CullTransparentMesh: 1
+--- !u!114 &957647822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957647818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878517980a9566c4e85e9c1a5cdacd58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1118990318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,6 +1184,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!114 &1349409054
 MonoBehaviour:
@@ -1510,6 +1528,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb744f61e879424282e4f3053028dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionBtn1: {fileID: 0}
+  optionBtn2: {fileID: 0}
+  optionBtn3: {fileID: 0}
+  optionBtn4: {fileID: 0}
+  optionBtn5: {fileID: 0}
+  optionBtn6: {fileID: 0}
+  optionBtn7: {fileID: 0}
+  optionBtn8: {fileID: 0}
   optionBtnTxt1: {fileID: 2108928327}
   optionBtnTxt2: {fileID: 1979010167}
   optionBtnTxt3: {fileID: 840748165}

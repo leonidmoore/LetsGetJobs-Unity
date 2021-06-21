@@ -669,6 +669,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 1461417548}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!1 &655118563
 GameObject:
@@ -834,6 +835,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 1461417548}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!1 &721460120
 GameObject:
@@ -1078,6 +1080,7 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 1461417548}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}
 --- !u!1 &949297519
 GameObject:
@@ -1195,7 +1198,7 @@ GameObject:
   - component: {fileID: 1461417547}
   - component: {fileID: 1461417549}
   - component: {fileID: 1461417548}
-  - component: {fileID: 1461417550}
+  - component: {fileID: 1461417551}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -1256,8 +1259,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "You take a day to edit your LinkedIn and put in all your recent accomplishments,
-    but you feel like you shouldn\u2019t stop there. What else do you do? Choose
-    one\r\n"
+    but you feel like you shouldn\u2019t stop there. What else do you do? (pick 1)\n"
 --- !u!222 &1461417549
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1266,25 +1268,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461417546}
   m_CullTransparentMesh: 1
---- !u!95 &1461417550
-Animator:
-  serializedVersion: 3
+--- !u!114 &1461417551
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461417546}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f28388c4f2a6e342be33229bf7635c6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878517980a9566c4e85e9c1a5cdacd58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1484412648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,6 +1291,7 @@ GameObject:
   - component: {fileID: 1484412649}
   - component: {fileID: 1484412650}
   - component: {fileID: 1484412651}
+  - component: {fileID: 1484412652}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1344,10 +1340,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb744f61e879424282e4f3053028dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionBtn1: {fileID: 0}
-  optionBtn2: {fileID: 0}
-  optionBtn3: {fileID: 0}
-  optionBtn4: {fileID: 0}
+  optionBtn1: {fileID: 655118565}
+  optionBtn2: {fileID: 1893616847}
+  optionBtn3: {fileID: 910215233}
+  optionBtn4: {fileID: 575467514}
   optionBtn5: {fileID: 0}
   optionBtn6: {fileID: 0}
   optionBtn7: {fileID: 0}
@@ -1361,6 +1357,27 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 1461417548}
+--- !u!114 &1484412652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484412648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c4e5af385798e4c97ab0ee698a0daf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnList: []
+  optionBtn1: {fileID: 655118565}
+  optionBtn2: {fileID: 1893616847}
+  optionBtn3: {fileID: 910215233}
+  optionBtn4: {fileID: 575467514}
+  optionBtn5: {fileID: 655118565}
+  optionBtn6: {fileID: 1893616847}
+  optionBtn7: {fileID: 910215233}
+  optionBtn8: {fileID: 575467514}
 --- !u!1 &1504377107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,4 +1621,5 @@ MonoBehaviour:
   optionBtnTxt7: {fileID: 0}
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 1461417548}
+  feedBackTxt: {fileID: 0}
   nextSceneBtn: {fileID: 0}

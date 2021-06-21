@@ -6,6 +6,5 @@ using UnityEngine.SceneManagement;
 
 public class FeedBack : MonoBehaviour
 {
-    public string feedBack;
     public List<string> feedBackList;
 }

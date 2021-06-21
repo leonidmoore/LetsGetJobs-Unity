@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0421hose Your Career"
+  m_Text: Choose Your Career
 --- !u!222 &29456013
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -367,7 +367,7 @@ MonoBehaviour:
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
   feedBackTxt: {fileID: 0}
-  nextSceneBtn: {fileID: 0}
+  someText: {fileID: 0}
 --- !u!1 &102008813
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,8 +719,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1084435818}
-  - component: {fileID: 1084435817}
   - component: {fileID: 1084435816}
+  - component: {fileID: 1084435817}
   m_Layer: 0
   m_Name: MajorManager
   m_TagString: Untagged
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1084435815}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ed6bc549319034fb736d0b09eb060f, type: 3}
+  m_Script: {fileID: 11500000, guid: 37563bfc0c985394cb92d881c315e5ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1084435818
@@ -779,6 +779,7 @@ GameObject:
   - component: {fileID: 1170402391}
   - component: {fileID: 1170402390}
   - component: {fileID: 1170402389}
+  - component: {fileID: 1170402392}
   m_Layer: 5
   m_Name: MajorOptionBtn3
   m_TagString: Major3
@@ -850,7 +851,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1170402392}
         m_TargetAssemblyTypeName: Click, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -900,6 +901,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170402387}
   m_CullTransparentMesh: 1
+--- !u!114 &1170402392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170402387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23bf75ffaa9a19b408e3460b5e704ade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionBtn: {fileID: 1170402389}
+  optionBtn1: {fileID: 0}
+  optionBtn2: {fileID: 0}
+  optionBtn3: {fileID: 0}
+  optionBtn4: {fileID: 0}
+  optionBtn5: {fileID: 0}
+  optionBtn6: {fileID: 0}
+  optionBtn7: {fileID: 0}
+  optionBtn8: {fileID: 0}
+  optionBtnTxt1: {fileID: 0}
+  optionBtnTxt2: {fileID: 0}
+  optionBtnTxt3: {fileID: 0}
+  optionBtnTxt4: {fileID: 0}
+  optionBtnTxt5: {fileID: 0}
+  optionBtnTxt6: {fileID: 0}
+  optionBtnTxt7: {fileID: 0}
+  optionBtnTxt8: {fileID: 0}
+  title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
+  someText: {fileID: 0}
 --- !u!1 &1339039985
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +945,7 @@ GameObject:
   - component: {fileID: 1339039989}
   - component: {fileID: 1339039988}
   - component: {fileID: 1339039987}
+  - component: {fileID: 1339039990}
   m_Layer: 5
   m_Name: MajorOptionBtn4
   m_TagString: Major4
@@ -983,7 +1017,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1339039990}
         m_TargetAssemblyTypeName: Click, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -1033,6 +1067,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339039985}
   m_CullTransparentMesh: 1
+--- !u!114 &1339039990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339039985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23bf75ffaa9a19b408e3460b5e704ade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionBtn: {fileID: 1339039987}
+  optionBtn1: {fileID: 0}
+  optionBtn2: {fileID: 0}
+  optionBtn3: {fileID: 0}
+  optionBtn4: {fileID: 0}
+  optionBtn5: {fileID: 0}
+  optionBtn6: {fileID: 0}
+  optionBtn7: {fileID: 0}
+  optionBtn8: {fileID: 0}
+  optionBtnTxt1: {fileID: 0}
+  optionBtnTxt2: {fileID: 0}
+  optionBtnTxt3: {fileID: 0}
+  optionBtnTxt4: {fileID: 0}
+  optionBtnTxt5: {fileID: 0}
+  optionBtnTxt6: {fileID: 0}
+  optionBtnTxt7: {fileID: 0}
+  optionBtnTxt8: {fileID: 0}
+  title: {fileID: 0}
+  feedBackTxt: {fileID: 0}
+  someText: {fileID: 0}
 --- !u!1 &1422185093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,7 +1477,7 @@ MonoBehaviour:
   optionBtnTxt8: {fileID: 0}
   title: {fileID: 0}
   feedBackTxt: {fileID: 0}
-  nextSceneBtn: {fileID: 0}
+  someText: {fileID: 0}
 --- !u!1 &2056081199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1548,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Major 4
+  m_Text: Video game developer
 --- !u!222 &2056081202
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1561,7 +1627,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Major 3
+  m_Text: Database administrator
 --- !u!222 &2087364714
 CanvasRenderer:
   m_ObjectHideFlags: 0
